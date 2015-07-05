@@ -2,8 +2,8 @@
 //  main.m
 //  DataExchange
 //
-//  Created by imai-book on 12/12/11.
-//  Copyright (c) 2012年 imai-book. All rights reserved.
+//  Created by morimotor on 12/12/11.
+//  Copyright (c) 2012年 morimotor. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

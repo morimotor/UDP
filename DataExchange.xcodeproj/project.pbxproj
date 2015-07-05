@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526E301E167703D4003C0200 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 526E301D167703D4003C0200 /* img.png */; };
 		528031311676F6310041B6BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528031301676F6310041B6BA /* UIKit.framework */; };
 		528031331676F6310041B6BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528031321676F6310041B6BA /* Foundation.framework */; };
 		528031351676F6310041B6BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528031341676F6310041B6BA /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		526E301D167703D4003C0200 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 		5280312C1676F6310041B6BA /* DataExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528031301676F6310041B6BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		528031321676F6310041B6BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526E301C167703AA003C0200 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				526E301D167703D4003C0200 /* img.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		528031211676F6310041B6BA = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 				528031481676F6320041B6BA /* CViewController.h */,
 				528031491676F6320041B6BA /* CViewController.m */,
 				5280314B1676F6320041B6BA /* CViewController.xib */,
+				526E301C167703AA003C0200 /* img */,
 				528031371676F6310041B6BA /* Supporting Files */,
 			);
 			path = DataExchange;
@@ -164,6 +175,7 @@
 				528031451676F6320041B6BA /* Default@2x.png in Resources */,
 				528031471676F6320041B6BA /* Default-568h@2x.png in Resources */,
 				5280314D1676F6320041B6BA /* CViewController.xib in Resources */,
+				526E301E167703D4003C0200 /* img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +269,11 @@
 		528031511676F6320041B6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataExchange/DataExchange-Prefix.pch";
 				INFOPLIST_FILE = "DataExchange/DataExchange-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,9 +282,11 @@
 		528031521676F6320041B6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataExchange/DataExchange-Prefix.pch";
 				INFOPLIST_FILE = "DataExchange/DataExchange-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -295,6 +311,7 @@
 				528031521676F6320041B6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
